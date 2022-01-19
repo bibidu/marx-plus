@@ -1,0 +1,18 @@
+{
+  "name": "marx-export-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf dist && NODE_ENV=development tsup src/index.ts --watch",
+    "build": "rimraf dist && tsup src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild-plugin-replace": "^1.1.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^5.11.11"
+  }
+}
