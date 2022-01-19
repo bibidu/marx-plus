@@ -3,7 +3,7 @@ import { replace } from "esbuild-plugin-replace";
 
 export const tsup: Options = {
   clean: true,
-  format: ["iife"],
+  format: ["cjs"],
   // format: ["esm", "cjs", "iife"],
   legacyOutput: true,
   esbuildPlugins: [
