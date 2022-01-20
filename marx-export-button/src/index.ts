@@ -16,7 +16,7 @@ export function activate(context) {
     icon,
     selectors, 
   });
-  exportButton.onClick = (selector) => {
+  exportButton.addEventListener('onClick', (selector) => {
     console.log('onClick ', selector)
-  }
+  })
 }
