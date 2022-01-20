@@ -24,6 +24,7 @@ interface INotification {
 
 interface IEditor {
   html: string;
+  containerSelector: string;
 }
 interface IMarx {
   topbar: ITopBar;

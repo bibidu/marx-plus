@@ -1,4 +1,5 @@
 import { handleExportHTML } from './handleExportHTML'
+import { handleExportPNG } from './handleExportPNG'
 
 const icon = "https://api.iconify.design/bytesize:export.svg";
 
@@ -25,9 +26,7 @@ export function activate(context) {
       case "export-html":
         return handleExportHTML();
       case "export-png":
-        return handleExportPng();
+        return handleExportPNG();
     }
   });
 }
-
-function handleExportPng() {}
