@@ -6,6 +6,7 @@ export const tsup: Options = {
   format: ["cjs"],
   // format: ["esm", "cjs", "iife"],
   legacyOutput: true,
+  noExternal: ['html2canvas'],
   esbuildPlugins: [
     replace({
       __DEV__: JSON.stringify(process.env.NODE_ENV),
