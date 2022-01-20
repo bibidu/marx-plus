@@ -1,22 +1,34 @@
 const icon = "https://api.iconify.design/bytesize:export.svg";
 
 export function activate(context) {
-  console.log('[marx-export-button] activate!')
+  console.log("[marx-export-button] activate!");
   const selectors = [
     {
-      id: 'export-html',
-      text: '导出html'
+      label: "export-html",
+      value: "导出html",
     },
     {
-      id: 'export-png',
-      text: '导出图片'
-    }
-  ]
+      label: "export-png",
+      value: "导出图片",
+    },
+  ];
+
   const exportButton = marx.topbar.toolbar.registerSelectorButton({
     icon,
-    selectors, 
+    selectors,
   });
-  exportButton.addEventListener('onClick', (selector) => {
-    console.log('onClick ', selector)
-  })
+
+  exportButton.addEventListener("onClick", (selector) => {
+    switch (selector.label) {
+      case "export-html":
+        return handleExportHTML();
+      case "export-png":
+        return handleExportPng();
+    }
+  });
 }
+
+function handleExportHTML() {
+  marx.notification.show('正在下载HTML, 请稍等！')
+}
+function handleExportPng() {}
