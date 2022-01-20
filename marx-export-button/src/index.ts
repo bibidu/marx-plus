@@ -14,7 +14,7 @@ export function activate(context) {
   ]
   const exportButton = marx.topbar.toolbar.registerSelectorButton({
     icon,
-    selectors,
+    selectors, 
   });
   exportButton.onClick = (selector) => {
     console.log('onClick ', selector)
