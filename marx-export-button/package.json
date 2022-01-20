@@ -14,5 +14,8 @@
     "esbuild-plugin-replace": "^1.1.0",
     "rimraf": "^3.0.2",
     "tsup": "^5.11.11"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.0"
   }
 }

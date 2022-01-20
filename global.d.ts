@@ -19,10 +19,16 @@ interface ITopBar {
 
 interface INotification {
   show: (text: string) => void;
+  hide: () => void;
+}
+
+interface IEditor {
+  html: string;
 }
 interface IMarx {
   topbar: ITopBar;
   notification: INotification;
+  editor: IEditor;
 }
 
 declare const marx: IMarx;
