@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm install && node scripts/install",
+    "install-all": "npm install && lerna bootstrap",
     "build": "tsup"
   },
   "repository": {
@@ -22,5 +22,8 @@
     "esbuild-plugin-replace": "^1.1.0",
     "pnpm": "^6.27.1",
     "tsup": "^5.11.11"
+  },
+  "dependencies": {
+    "lerna": "^4.0.0"
   }
 }
