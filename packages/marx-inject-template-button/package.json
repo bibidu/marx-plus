@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development tsup src/index.ts --watch",
-    "build": "tsup src/index.ts"
+    "start": "NODE_ENV=development tsup src/index.ts --watch"
   },
   "keywords": [],
   "author": "",
