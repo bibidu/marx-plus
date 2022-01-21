@@ -1,0 +1,26 @@
+{
+  "name": "marx-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install && node scripts/install",
+    "build": "node scripts/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibidu/marx-plus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bibidu/marx-plus/issues"
+  },
+  "homepage": "https://github.com/bibidu/marx-plus#readme",
+  "devDependencies": {
+    "esbuild-plugin-replace": "^1.1.0",
+    "pnpm": "^6.27.1",
+    "tsup": "^5.11.11"
+  }
+}

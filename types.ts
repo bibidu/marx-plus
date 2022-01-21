@@ -26,10 +26,9 @@ interface IEditor {
   html: string;
   containerSelector: string;
 }
-interface IMarx {
+
+export interface IMarx {
   topbar: ITopBar;
   notification: INotification;
   editor: IEditor;
 }
-
-declare const marx: IMarx;

@@ -1,3 +1,6 @@
+import { IMarx } from '../../../types'
+declare const marx: IMarx;
+
 import { handleExportHTML } from './handleExportHTML'
 import { handleExportPNG } from './handleExportPNG'
 
