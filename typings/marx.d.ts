@@ -2,17 +2,17 @@ interface ISelectorButtonOption {
   label: string;
   value: string;
 }
+interface IButton<T> {
+  addEventListener: (type: string, callback: (selector?: T) => void) => void;
+}
 interface IToolBar {
+  registerButton: (options: { icon: string }) => IButton<{ icon: string }>;
   registerSelectorButton: (options: {
     icon: string;
     selectors: ISelectorButtonOption[];
-  }) => {
-    addEventListener: (
-      type: string,
-      callback: (selector: ISelectorButtonOption) => void
-    ) => void;
-  };
+  }) => IButton<ISelectorButtonOption>;
 }
+
 interface ITopBar {
   toolbar: IToolBar;
 }
@@ -25,10 +25,18 @@ interface INotification {
 interface IEditor {
   html: string;
   containerSelector: string;
+  copyText: (text: string) => void;
 }
 
-export interface IMarx {
+interface IMarx {
   topbar: ITopBar;
   notification: INotification;
   editor: IEditor;
+  utils: IUtils;
 }
+
+interface IUtils {
+  sleep: (ms: number) => void;
+}
+
+declare const marx: IMarx;

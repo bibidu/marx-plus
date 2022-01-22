@@ -2,8 +2,9 @@ import html2canvas from "html2canvas";
 import { createDownloadLabel } from "./createDownloadLabel";
 import { uuid } from "./uuid";
 
-export function handleExportHTML() {
+export async function handleExportHTML() {
   marx.notification.show("正在下载HTML, 请稍等！");
+  await marx.utils.sleep(500);
 
   const previewHtml = createPreviewHtml(marx.editor.html);
 

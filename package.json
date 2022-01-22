@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "install-all": "npm install && lerna bootstrap",
+    "start": "tsup --watch",
     "build": "tsup"
   },
   "repository": {
