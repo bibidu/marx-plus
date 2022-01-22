@@ -26,6 +26,7 @@ interface IEditor {
   html: string;
   containerSelector: string;
   copyText: (text: string) => void;
+  updateMarkdownTheme: (theme: string) => void;
 }
 
 interface IMarx {

@@ -3,8 +3,8 @@ import { example } from "./example";
 const icon = `<svg
 xmlns="http://www.w3.org/2000/svg"
 xmlns:xlink="http://www.w3.org/1999/xlink"
-width="1em"
-height="1em"
+width="16"
+height="16"
 preserveAspectRatio="xMidYMid meet"
 viewBox="0 0 48 48"
 style="

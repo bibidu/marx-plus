@@ -27,4 +27,16 @@ export default defineConfig([
       }),
     ],
   },
+  {
+    entry: ["packages/marx-theme-button/src/index.ts"],
+    outDir: "dist/marx-theme-button",
+    clean: true,
+    format: ["cjs"],
+    legacyOutput: true,
+    esbuildPlugins: [
+      replace({
+        __DEV__: JSON.stringify(process.env.NODE_ENV),
+      }),
+    ],
+  },
 ]);
