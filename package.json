@@ -24,6 +24,8 @@
     "tsup": "^5.11.11"
   },
   "dependencies": {
-    "lerna": "^4.0.0"
+    "codemirror": "^5.65.1",
+    "lerna": "^4.0.0",
+    "vue-codemirror": "^4.0.6"
   }
 }

@@ -33,8 +33,8 @@ export function activate(context) {
       value: "github 主题",
     },
     {
-      label: "gitlab",
-      value: "gitlab 主题",
+      label: "gitee",
+      value: "gitee 主题",
     },
   ];
 
@@ -47,7 +47,7 @@ export function activate(context) {
     switch (selector.label) {
       case "github":
         return marx.editor.updateMarkdownTheme(github)
-      case "gitlab":
+      case "gitee":
         return marx.editor.updateMarkdownTheme(gitee)
     }
   });
